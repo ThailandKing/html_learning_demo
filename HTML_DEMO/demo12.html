@@ -1,0 +1,75 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-16 14:55:18
+ * @LastEditTime : 2020-01-16 15:45:54
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML_DEMO\demo12.html
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>表格</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .tb{
+            /* 表格宽度 */
+            width: 200px;
+            /* 居中 */
+            margin: 0px auto;
+            /* 边框合并 */
+            border-collapse: collapse;
+        }
+        .tb td,th{
+            /* 设置边框 */
+            border: 1px solid black;
+            /* 内容居中 */
+            text-align: center;
+        }
+        .tb tr:nth-child(even){
+            /* 设置隔行变色 */
+           background-color: green;
+        }
+        .tb tr:hover{
+            /* 移入变色 */
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <table class="tb">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>地址</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr><tr>
+            <td>3</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+    </table>
+</body>
+
+</html>

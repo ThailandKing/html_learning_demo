@@ -1,0 +1,65 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-16 15:55:07
+ * @LastEditTime : 2020-01-16 16:12:41
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML_DEMO\demo13.html
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>长表格</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .tb {
+            /* 表格宽度 */
+            width: 200px;
+            /* 居中 */
+            margin: 0px auto;
+            /* 边框合并 */
+            border-collapse: collapse;
+        }
+        .tb td,th{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <table class="tb">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>地址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>花果山</td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>花果山</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <td>总数：</td>
+                <td>10</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

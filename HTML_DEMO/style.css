@@ -1,0 +1,78 @@
+/* 注释 */
+.p {
+    color: red;
+}
+.p2 {
+    font-size: 50px;
+}
+
+h1{
+    color: #000;
+}
+
+#p1{
+    font-size: 40px;
+}
+
+.p,.p2,#p1{
+    background-color: yellow;
+}
+
+*{
+    color: black;
+}
+
+span.p3{
+    color: red;
+}
+
+#d1 p span{
+    background-color: blue;
+}
+
+div > span{
+    font-size: 40px;
+}
+
+a:visited{
+    color: red;
+}
+
+a:link{
+    color: blue;
+}
+
+a:hover{
+    color: orange;
+}
+
+a:active{
+    color: palegreen;
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+p::selection{
+    background-color: green;
+}
+
+#p5::first-letter{
+    color: red;
+    font-size: 40px;
+}
+
+#p5::first-line{
+    color: green;
+}
+
+#p5::before{
+    color: red;
+    content: "我是段落前内容";
+}
+
+#p5::after{
+    color: red;
+    content: "我是段落后内容";
+}

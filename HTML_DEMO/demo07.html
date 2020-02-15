@@ -1,0 +1,62 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-05 15:17:29
+ * @LastEditTime : 2020-01-06 23:45:13
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML_DEMO\demo05.html
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>盒子模型</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-width: 10px 20px 30px 40px;
+            border-color: red;
+            border-style: solid;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 20px 30px 40px;
+        }
+
+        .box2 {
+            margin: 10px 20px 30px 40px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            overflow: auto;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 500px;
+            background-color: yellow;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">abc</div>
+    <div class="box2">asd</div>
+    <a href="#">这是一个链接</a>
+    <div class="box2">
+        <div class="box3">123</div>
+    </div>
+</body>
+
+</html>

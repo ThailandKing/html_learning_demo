@@ -1,0 +1,60 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-16 16:16:50
+ * @LastEditTime : 2020-01-16 16:37:44
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML_DEMO\demo14.html
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>父子元素外边距重合与高度塌陷解决方案</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-top: 50px;
+        }
+
+        .box3{
+            border: 10px solid red;
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- 高度塌陷 -->
+    <div class="box3 clearfix">
+        <div class="box4"></div>
+    </div>
+    <!-- 父子元素垂直外边距重合 -->
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

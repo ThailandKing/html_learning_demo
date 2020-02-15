@@ -1,0 +1,53 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-16 11:23:15
+ * @LastEditTime : 2020-01-16 14:10:02
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML_DEMO\img\按钮背景切换练习.html
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>背景</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .btn:link{
+            display: block;
+            width: 226px;
+            height: 226px;
+            background-image: url(img/1.jfif);
+        }
+
+        .btn:hover{
+            background-image: url(img/2.jfif);
+        }
+
+        .btn:active{
+            background-image: url(img/3.jfif);
+        }
+
+        .bton:link{
+            display: block;
+            width: 125px;
+            height: 130px;
+            background-image: url(img/4.jfif);
+        }
+
+        .bton:hover{
+            background-position: -125px 0;
+        }
+
+        .bton:active{
+            background-position: -250px 0;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <a class="btn" href="#"></a>
+    <a class="bton" href="#"></a>
+</body>
+
+</html>

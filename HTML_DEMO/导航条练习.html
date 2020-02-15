@@ -1,0 +1,67 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-05 15:17:29
+ * @LastEditTime : 2020-01-15 10:29:07
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML_DEMO\demo05.html
+ -->
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+     <title>导航条练习</title>
+     <meta charset="utf-8" />
+     <style type="text/css">
+     /* 清除浏览器默认格式 */
+         * {
+             margin: 0;
+             padding: 0;
+         }
+         .nav{
+             width: 1000px;
+             background-color: blue;
+             margin: 50px auto;
+             /* 避免li浮动造成的高度塌陷 */
+             overflow: hidden;
+         }
+         .nav li{
+             float: left;
+             width: 25%;
+             /* 去除列表圆点 */
+             list-style: none;
+         }
+         .nav li a{
+             /* 转换为块元素 */
+             display: block;
+             width: 100%;
+             /* 文字居中 */
+             text-align: center;
+             /* 设置上下文内边距 */
+             padding: 10px 0px;
+             /* 去除超链接下划线 */
+             text-decoration: none;
+             /* 字体颜色 */
+             color: white;
+             /* 字体加粗 */
+             font-weight: bold;
+         }
+         .nav li a:hover{
+             /* 超链接点击变色 */
+            background-color: red;
+         }
+     </style>
+ </head>
+ 
+ <body>
+     <div class="header">
+         <ul class="nav">
+             <li><a href="#">首页</a></li>
+             <li><a href="#">服装</a></li>
+             <li><a href="#">数码</a></li>
+             <li><a href="#">家居</a></li>
+         </ul>
+     </div>
+ </body>
+ 
+ </html>
